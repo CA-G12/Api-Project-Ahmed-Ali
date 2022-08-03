@@ -8,6 +8,7 @@ html{
 }
 body{
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     padding-top: 8rem;
     background: linear-gradient(to left, #999, #c7c7c7);
 
@@ -21,8 +22,18 @@ body input{
     width: 40%;
     height: 4rem;
     font-size: 2rem;
+    border:none;
     border-radius: 1rem;
     padding-left: 1rem;
+}
+button{
+    width: 8rem;
+    margin-left: 1rem;
+    height: 4rem;
+    border: none;
+    color: #f0eeee;
+    background-color: rgb(12, 145, 12);
+    border-radius: 1.5rem;
 }
 .characters-container{
     display: flex;
@@ -56,7 +67,7 @@ left: 50%;
 transform: translate(-50%,-50%);
 z-index: 1;
 opacity: 0;
-color: #f7f7f7;
+color: rgb(165, 162, 162);
 }
 .character:hover  .overlay {  
     top: 50%;
@@ -128,12 +139,14 @@ span {
 }
 
 .quotes{
+    font-family: 'Libre Baskerville', serif;
     width: 23%;
     height: 20rem;
     font-size: 2rem;
     border-radius: 1rem;
     /* border:#000 double  0.5rem; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #E7E7E7;
     display: flex;
     align-items: center;
 }

@@ -1,5 +1,3 @@
-const characters = 'https://breakingbadapi.com/api/characters';
-const quotes = 'https://breakingbadapi.com/api/quotes';
 
 //! Fetch Api Data
 const fetch = (url, callback) => {
@@ -13,7 +11,6 @@ const fetch = (url, callback) => {
   };
   xhr.open('GET', url);
   xhr.send();
-  return data;
 };
 
 //! Search Functions
