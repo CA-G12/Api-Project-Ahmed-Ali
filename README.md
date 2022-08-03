@@ -14,5 +14,6 @@ This web App is showing a funny stuff related to the one of, if not, the best se
 
 #### Created By
 
-[Ahmed Abu SHarar](https://github.com/AhmedAbuSharar)
+[Ahmed Abu Sharar](https://github.com/AhmedAbuSharar)
+
 [Ali Shbair](https://github.com/ShbairAli)
