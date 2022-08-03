@@ -1,0 +1,25 @@
+{
+  "name": "api-project-ahmed-ali",
+  "version": "1.0.0",
+  "description": "API Project, required for the G12 G2G Cohort",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CA-G12/Api-Project-Ahmed-Ali.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CA-G12/Api-Project-Ahmed-Ali/issues"
+  },
+  "homepage": "https://github.com/CA-G12/Api-Project-Ahmed-Ali#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
