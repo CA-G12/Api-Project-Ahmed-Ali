@@ -6,3 +6,154 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    text-align: center;
+    padding-top: 8rem;
+    background: linear-gradient(to left, #999, #c7c7c7);
+
+}
+body h1 {
+    font-size: 5rem;
+    width: 22rem;
+    margin: 0 auto;
+}
+body input{
+    width: 40%;
+    height: 4rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+.characters-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10rem auto;
+    justify-content: center;
+}
+
+.character{
+    width: 30%;
+    position: relative;
+    height: 40rem;
+
+
+}
+.character-img{
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+.overlay{
+    width: 90%;
+position:absolute;
+/* bottom: 10%; */
+top: 90%;
+left: 50%;
+transform: translate(-50%,-50%);
+z-index: 1;
+opacity: 0;
+color: #f7f7f7;
+}
+.character:hover  .overlay {  
+    top: 50%;
+    transition: 1s;
+    opacity: 1;
+}
+
+.character:hover {
+    opacity: 0.7;
+    transition: 1s;
+
+}
+
+.about h3 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+.about h5{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+span {
+    color: red;
+}
+ /* end section charactesrs-container  */
+
+
+.gif-container{
+    width: 90%;
+    margin: 5rem auto;
+    padding: 5rem  0;
+    border-top: solid #000 1px
+}
+
+.all-gif{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gif{
+    width: 18%;
+    height: 20rem;
+    margin-top: 2rem;
+}
+.gif img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* <!-- end section GIF --> */
+
+
+.quotes-container{
+    width: 90%;
+    margin: 5rem auto;
+    padding: 5rem  0;
+    border-top: solid #000 1px
+}
+
+.quotes-container h1 {
+    margin-bottom: 3rem;
+}
+.all-quotes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.quotes{
+    width: 23%;
+    height: 20rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    /* border:#000 double  0.5rem; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+}
+.quotes p {
+    width: 100%;
+    margin: auto;
+}
+.gif-img{
+    position: absolute;
+    opacity: 0;
+    left: 1.5rem;
+}
+
+/* .character:active .character {
+    opacity: 0;
+    transition: 1s;
+} */
+.character:active   .gif-img{
+    z-index: 2;
+    opacity: 1;
+    transition: 1s;
+}
+
