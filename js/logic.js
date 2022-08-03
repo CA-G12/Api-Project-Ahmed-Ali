@@ -23,10 +23,6 @@ const allFunctions = (() => {
       return data.filter((c) => c[key] === input);
     },
 
-    searchGifs: (data, input) => {
-      this.replaceUrl(input);
-    },
-
     replaceUrl: (str) => {
       const editedStr = str.replaceAll(' ', '+');
       return `https://api.giphy.com/v1/gifs/search?api_key=Rs4NNXOVGGQuEU75DPtNdsBjCD0P65hE&q=${editedStr}+&limit=10&offset=0&rating=g&lang=en`;
@@ -34,6 +30,6 @@ const allFunctions = (() => {
   };
 })();
 
-if (typeof module !== 'undefined') {
-  module.exports = allFunctions;
-}
+// if (typeof module !== 'undefined') {
+//   module.exports = allFunctions;
+// }
