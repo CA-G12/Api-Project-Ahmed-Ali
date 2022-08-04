@@ -31,7 +31,19 @@ for(let i = 0 ; i < 6 ; i++){
     })
 }
 
+function Gifs(data){
 
+    let gifimg = document.createElement('img')
+    console.log(data);
+    let div = document.querySelector(".character");
+    gifimg.classList.add('character-img');
+    gifimg.classList.add('gif-img');
+    // class="character-img   , gif-img"
+    gifimg.src = data.data[0].images.downsized_medium.url;
+
+    div.appendChild(gifimg)
+
+}
 
 function characterDetails (character ,){
     let div1 = document.createElement('div')
@@ -66,6 +78,7 @@ let h5_2 = document.createElement('h5')
  
     div1.appendChild(img)
     div1.appendChild(div2)
+    fetch(allFunctions.replaceUrl(input.value), (data) => Gifs(data));
     charactersContainer.appendChild(div1)
 }
 
