@@ -5,6 +5,8 @@ buttonSearch.addEventListener('click', () => {
 });
 
 const renderGifs = (data) => {
+  gifsContainer.innerHTML= '';
+
   for (let i = 0; i < 10; i++) {
     gifsContainer.innerHTML += `
             <div class="gif">
